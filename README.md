@@ -1,8 +1,9 @@
 # Gemini Browser Agent Extension
 
 A powerful Chrome Extension that acts as your personal AI browser assistant. It can **read pages**, **click elements**, **type text**, and **scroll**, all powered by Google Gemini 2.0 Flash.
+<img width="362" height="852" alt="image" src="https://github.com/user-attachments/assets/bc7aafe2-efa7-4f19-b0c5-9a9eaf33b917" />
+<img width="353" height="815" alt="image" src="https://github.com/user-attachments/assets/71d4d5f4-c6e7-4dbf-8824-b6e2725f20ed" />
 
-![Screenshot](https://via.placeholder.com/800x400?text=Gemini+Browser+Agent+UI)
 
 ## Features
 -   **Premium Glassmorphism UI**: Beautiful dark mode design with animations.
