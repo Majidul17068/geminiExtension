@@ -9,8 +9,8 @@ A powerful Chrome Extension that acts as your personal AI browser assistant. It 
 -   **Premium Glassmorphism UI**: Beautiful dark mode design with animations.
 -   **3 Modes**:
     -   **Chat**: Casual conversation with the AI.
-    -   **Context**: Ask questions about the current page content.
-    -   **Action**: Command the AI to interact with the page (Click, Type, Scroll).
+    -   **Context**: Summaries, explanations, and answers pulled from the current page content.
+    -   **Action**: Command the AI to interact with the page (Click, Type, Scroll, Navigate).
 -   **Google Authentication**: Secure Sign-in with Google (supports Dev Mode fallback).
 -   **Browser Automation**: "Hands-free" browsing capabilities.
 
