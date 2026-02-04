@@ -92,6 +92,11 @@ export default function App() {
   const [input, setInput] = useState('');
   const [isTyping, setIsTyping] = useState(false);
   const messagesEndRef = useRef<HTMLDivElement>(null);
+  const modeDescriptions: Record<Mode, string> = {
+    chat: 'Just chat with the assistant about anything you like.',
+    context: 'Ask for summaries, explanations, or answers from this page.',
+    action: 'Request actions like clicking, typing, or navigating for you.'
+  };
 
   const scrollToBottom = () => messagesEndRef.current?.scrollIntoView({ behavior: "smooth" });
   useEffect(scrollToBottom, [messages]);
@@ -179,6 +184,7 @@ export default function App() {
     try {
       // Prompt Engineering based on Mode
       let systemPrompt = "";
+      if (mode === 'chat') systemPrompt = "You are in Chat Mode. Focus on clear, helpful conversation. ";
       if (mode === 'context') systemPrompt = "You are in Context Mode. Prioritize reading the page content and answering questions about it. ";
       if (mode === 'action') systemPrompt = "You are in Action Mode. Prioritize using tools to click, type, and navigate. ";
 
@@ -269,6 +275,7 @@ export default function App() {
           <MousePointer2 size={14} /> Action
         </button>
       </div>
+      <div className="mode-description">{modeDescriptions[mode]}</div>
 
       {/* Chat Area */}
       <div className="chat-container">
